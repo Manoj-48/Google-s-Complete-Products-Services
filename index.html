@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Complete Products & Services</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #202124;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dadce0;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #202124;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 span {
+            color: #4285f4; /* Google Blue */
+        }
+        
+        header p {
+            color: #5f6368;
+            font-size: 1.1rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Grid Layout */
+        .category-section {
+            margin-bottom: 3rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #202124;
+            border-left: 4px solid #ea4335; /* Google Red */
+            padding-left: 1rem;
+        }
+        
+        /* Adjust border colors for variety */
+        .category-section:nth-child(2) .category-title { border-color: #fbbc04; } /* Yellow */
+        .category-section:nth-child(3) .category-title { border-color: #34a853; } /* Green */
+        .category-section:nth-child(4) .category-title { border-color: #4285f4; } /* Blue */
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .card:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #5f6368;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #202124;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #9aa0a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><span>Google's</span> Products & Services</h1>
+        <p>A comprehensive list of the ecosystem.</p>
+    </header>
+
+    <div class="container">
+
+        <section class="category-section">
+            <h2 class="category-title">Search & Explore</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <h3>Google Search</h3>
+                    <p>The world's most popular search engine.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Maps</h3>
+                    <p>Web mapping platform and consumer application.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Translate</h3>
+                    <p>Multilingual neural machine translation service.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Chrome</h3>
+                    <p>Fast, secure, and free web browser.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Earth</h3>
+                    <p>3D representation of Earth based on satellite imagery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Communication & Productivity</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <h3>Gmail</h3>
+                    <p>Free, secure, and smart email service.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Drive</h3>
+                    <p>File storage and synchronization service.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Docs</h3>
+                    <p>Online word processor included as part of Workspace.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Sheets</h3>
+                    <p>Online spreadsheet editor.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Meet</h3>
+                    <p>Real-time video conferencing service.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Calendar</h3>
+                    <p>Time-management and scheduling calendar service.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Devices & Operating Systems</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <h3>Android</h3>
+                    <p>Mobile operating system based on a modified Linux kernel.</p>
+                </div>
+                <div class="card">
+                    <h3>Pixel</h3>
+                    <p>Line of consumer electronics devices (Phones, Tablets, Watch).</p>
+                </div>
+                <div class="card">
+                    <h3>ChromeOS</h3>
+                    <p>Linux-based operating system designed by Google.</p>
+                </div>
+                <div class="card">
+                    <h3>Nest</h3>
+                    <p>Smart home products including speakers and displays.</p>
+                </div>
+                <div class="card">
+                    <h3>Fitbit</h3>
+                    <p>Consumer electronics and fitness tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2 class="category-title">Business & Developers</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <h3>Google Cloud</h3>
+                    <p>Suite of cloud computing services.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Ads</h3>
+                    <p>Online advertising platform.</p>
+                </div>
+                <div class="card">
+                    <h3>Google AdSense</h3>
+                    <p>Program for publishers to serve text, image, video advertisements.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Analytics</h3>
+                    <p>Web analytics service to track and report website traffic.</p>
+                </div>
+                <div class="card">
+                    <h3>Firebase</h3>
+                    <p>Platform for creating mobile and web applications.</p>
+                </div>
+                <div class="card">
+                    <h3>Flutter</h3>
+                    <p>Open-source UI software development kit.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Unofficial Google Product List. Created for educational purposes.</p>
+        <p>All trademarks are property of their respective owners.</p>
+    </footer>
+
+</body>
+  </html>
+  
